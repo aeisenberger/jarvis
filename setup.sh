@@ -23,13 +23,6 @@ brew install wget gh
 # Refresh shell
 source ~/.zprofile
 
-# Setup apps directory and switch to it
-mkdir ~/apps
-goto_apps() {
-    cd ~/apps || return
-}
-
-
 
 read -p "Setup new SSH key (yes/no)? (Reccomended response: yes) : "
 if [ "$REPLY" != "yes" ]; then
@@ -38,3 +31,7 @@ else
    ./setup-github.sh
 fi
 
+# Switch to apps directory
+goto_apps() {
+    cd ~/apps || return
+}
