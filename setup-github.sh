@@ -31,7 +31,7 @@ EOF
     cat ~/.ssh/id_ed25519.pub
 
     ssh-add --apple-use-keychain ~/.ssh/id_ed25519
-    open "https://github.com/settings/keys"
+    open "https://github.com/settings/ssh/new"
 else
     echo "GitHub setup skipped."
 fi
