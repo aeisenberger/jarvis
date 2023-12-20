@@ -23,34 +23,12 @@ brew install wget gh
 # Refresh shell
 source ~/.zprofile
 
+# Other setup scripts
+./setup-github.sh
+./setup-node.sh
+./setup-rbenv.sh
+./setup-yarn.sh
 
-read -p "Setup new SSH key (yes/no)? (Reccomended response: yes) : "
-if [ "$REPLY" != "yes" ]; then
-    echo "Skipping SSH KEY Github setup"
-else
-   ./setup-github.sh
-fi
-
-read -p "Setup RBENV (yes/no)? (Reccomended response: yes) : "
-if [ "$REPLY" != "yes" ]; then
-    echo "Skipping RBENV setup"
-else
-   ./setup-rbenv.sh
-fi
-
-read -p "Setup Node/NVM (yes/no)? (Reccomended response: yes) : "
-if [ "$REPLY" != "yes" ]; then
-    echo "Skipping Node/NVM setup"
-else
-   ./setup-node.sh
-fi
-
-read -p "Setup yarn (yes/no)? (Reccomended response: yes) : "
-if [ "$REPLY" != "yes" ]; then
-    echo "Skipping yarn setup"
-else
-   ./setup-yarn.sh
-fi
 
 # Switch to apps directory
 goto_apps() {
