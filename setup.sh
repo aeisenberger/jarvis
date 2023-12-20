@@ -49,7 +49,7 @@ read -p "Setup yarn (yes/no)? (Reccomended response: yes) : "
 if [ "$REPLY" != "yes" ]; then
     echo "Skipping yarn setup"
 else
-   ./setup-node.sh
+   ./setup-yarn.sh
 fi
 
 # Switch to apps directory

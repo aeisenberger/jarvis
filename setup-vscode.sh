@@ -11,4 +11,13 @@ EOF
 source ~/.zprofile
 
 # Install vscode extensions
-code --install-extension steoates.autoimport esbenp.prettier-vscode vscode-icons-team.vscode-icons CraigMaslowski.erb wmaurer.change-case dbaeumer.vscode-eslint vincaslt.highlight-matching-tag ms-vscode.makefile-tools unifiedjs.vscode-mdx bradlc.vscode-tailwindcss jaspernorth.vscode-pigments
+code --install-extension steoates.autoimport 
+code --install-extension esbenp.prettier-vscode
+code --install-extension vscode-icons-team.vscode-icons
+code --install-extension CraigMaslowski.erb wmaurer.change-case
+code --install-extension dbaeumer.vscode-eslint 
+code --install-extension vincaslt.highlight-matching-tag
+code --install-extension ms-vscode.makefile-tools
+code --install-extension unifiedjs.vscode-mdx
+code --install-extension bradlc.vscode-tailwindcss
+code --install-extension jaspernorth.vscode-pigments
